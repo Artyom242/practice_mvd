@@ -133,6 +133,10 @@
     color: #457fca ;
 }
 
+.header_top_burger_menu .btn_white:hover {
+  background: #457fca;
+}
+
 /* main */
 
 .btn {
