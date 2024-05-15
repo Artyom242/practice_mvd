@@ -1,0 +1,15 @@
+.table_result {
+    width: 100%;
+    border: none;
+    display: block;
+    overflow-x: auto;
+}
+
+.result_title th {
+    min-width: 60px;
+}
+
+.result_title th:first-child {
+    width: 50%;
+    min-width: 300px;
+}

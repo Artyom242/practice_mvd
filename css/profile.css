@@ -1,0 +1,32 @@
+.discipline_section {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+}
+
+.discipline_block {
+    background: linear-gradient(to bottom, #E9E9E9, #F4F4F4);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discipline_block__logo {
+    width: 50px;
+}
+
+.discipline_block__title {
+    flex: 1 1 auto;
+}
+
+.discipline_block__bottom {
+    text-align: end;
+    margin-top: 30px;
+}
+
+.result_concurs {
+    font-size: calc(30px + 10 * (100vw / 1300));
+    font-weight: bold;
+}

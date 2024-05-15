@@ -1,0 +1,75 @@
+.gramots_block {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.info_title_blocks {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #909090;
+}
+
+.info_title {
+    cursor: pointer;
+}
+
+.info_title_blocks__active {
+    color: #0082cb;
+}
+/* content */
+.info_content_block {
+    margin-top: 30px;
+    line-height: normal;
+}
+
+/* files */
+.info_download_files {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.info_download_file {
+    padding: 30px;
+    width: 300px;
+    border: 1px solid #909090;
+    border-radius: 10px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transition: all, .3s;
+}
+
+.info_download_file svg {
+    width: 50px;
+}
+
+.info_download_file:hover {
+    background: #e0e0e0;
+}
+
+.accordion_info_section {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .info_download_files {
+      gap: 20px;
+    }
+
+    .info_section {
+        display: none;
+    }
+
+    .accordion_info_section {
+        display: block;
+    }
+    
+}  
