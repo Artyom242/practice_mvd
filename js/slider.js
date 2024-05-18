@@ -41,7 +41,7 @@ function next() {
 function prev() {
 
     if (number == 0) {
-        number = 3;
+        number = 2;
     } else {
         number--;
     }
