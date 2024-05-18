@@ -199,6 +199,7 @@
   transition: transform 1s;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .flip {
@@ -654,4 +655,9 @@ padding: 0 15px;
     background: white;
     width: 100%;
   }
+  
+.popup {
+  left: 20px;
+  max-width: auto;
+}
 }
