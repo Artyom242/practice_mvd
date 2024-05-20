@@ -64,56 +64,56 @@
         <section>
           <div class="__container">
             <h2 class="title_section">Регистрация</h2>
-            <form action="" class="auth_block__form">
+            <form action="" class="auth_block__form" onsubmit="return validateFormReg()">
               <div class="poles">
-                <div class="form_pole">
-                  <label for="">Фамилия *</label>
-                  <input type="text" class="btn_form">
-                </div>
-                <div class="form_pole">
-                  <label for="">Имя *</label>
-                  <input type="text" class="btn_form">
-                </div>
-              </div>
-              <div class="poles">
-                <div class="form_pole">
-                  <label for="">Отчество *</label>
-                  <input type="text" class="btn_form">
-                </div>
-                <div class="form_pole">
-                  <label for="">Дата рождения *</label>
-                  <input type="date" class="btn_form">
-                </div>
-              </div>
-              <div class="poles">
-                <div class="form_pole">
-                  <div class="messages">
-                    <label for="">Телефон *</label>
-                    <p class="little error">Заполните поле!</p>
+                  <div class="form_pole">
+                      <label for="surname">Фамилия *</label>
+                      <input type="text" id="surname" class="btn_form" required>
                   </div>
-                  <input type="tel" class="btn_form">
-                </div>
-                <div class="form_pole">
-                  <label for="">Электронная почта</label>
-                  <input type="email" class="btn_form">
-                </div>
+                  <div class="form_pole">
+                      <label for="name">Имя *</label>
+                      <input type="text" id="name" class="btn_form" required>
+                  </div>
+              </div>
+              <div class="poles">
+                  <div class="form_pole">
+                      <label for="patronymic">Отчество *</label>
+                      <input type="text" id="patronymic" class="btn_form" required>
+                  </div>
+                  <div class="form_pole">
+                      <label for="birthdate">Дата рождения *</label>
+                      <input type="date" id="birthdate" class="btn_form" required>
+                  </div>
+              </div>
+              <div class="poles">
+                  <div class="form_pole">
+                      <div class="messages">
+                          <label for="phone">Телефон *</label>
+                          <p class="little error" id="phoneError">Заполните поле!</p>
+                      </div>
+                      <input type="tel" id="phone" class="btn_form" required>
+                  </div>
+                  <div class="form_pole">
+                      <label for="email">Электронная почта</label>
+                      <input type="email" id="email" class="btn_form">
+                  </div>
               </div>
               <div class="form_pole">
-                <label for="">Паспортные данные *</label>
-                <input type="text" class="btn_form">
+                  <label for="passport">Паспортные данные *</label>
+                  <input type="text" id="passport" class="btn_form" required>
               </div>
               <div class="form_pole">
-                <label for="">Пароль *</label>
-                <input type="password" class="btn_form">
+                  <label for="password">Пароль *</label>
+                  <input type="password" id="password" class="btn_form" minlength="8" required>
               </div>
               <div class="form_pole">
-                <label for="">Повторите пароль *</label>
-                <input type="password" class="btn_form">
+                  <label for="confirmPassword">Повторите пароль *</label>
+                  <input type="password" id="confirmPassword" class="btn_form" minlength="8" required>
               </div>
               <div class="form_btns_block">
-                <button type="submit" class="btn btn_green max-width_btn">Зарегистрироваться</button>
+                  <button type="submit" class="btn btn_green max-width_btn">Зарегистрироваться</button>
               </div>
-            </form>
+          </form> 
           </div>
         </section>
       </main>
@@ -199,5 +199,6 @@
     <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/validator.js"></script>
   </body>
 </html>
