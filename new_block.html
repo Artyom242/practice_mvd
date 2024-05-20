@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/null.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/new_block.css">
+    <title>Авторизация</title>
   </head>
   <body>
     <div class="wrapper">
@@ -60,281 +61,26 @@
       </header>
 
       <main>
-        <section class="slider_section">
-          <div class="__container slider_section_block">
-            <div class="slider_section__title">
-              <h1>Безопасность <br> — превыше всего</h1>
-            </div>
-            <div class="slider_section__text">
-              <p>Конкурс направлен на поддержку молодежных инициатив и привлечение внимания широкой общественности к проблематике обеспечения безопасности на дорогах.</p>
-            </div>
-            <div class="slider_section__btn">
-              <div class="slider_section__btn_block">
-                <div class="slider_section__btn_block_title">
-                  <h3 class="titile_left">Пусть дорога станет безопаснее</h3>
-                </div>
-                <button class="btn btn_green">Подать заявку</button>
+        <section class="gradient_fon">
+          <div class="__container">
+            <h2 class="title_section">Итоги полуфинала</h2>
+            
+            <div class="blocks_news">
+              <div class="blocks_news__img">
+                <img src="img/Rectangle 9.png" class="img" alt="Новость">
               </div>
-            </div>
-            <div class="slider_section__navigation">
-              <button onclick="prev()">
-                <svg class="right_navig" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="22" viewBox="0 0 15 22" fill="none">
-                  <rect width="14.9031" height="21.9998" fill="url(#pattern0_17_48)"/>
-                  <defs>
-                  <pattern id="pattern0_17_48" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0_17_48" transform="matrix(0.0115327 0 0 0.0078125 -0.238095 0)"/>
-                  </pattern>
-                  <image id="image0_17_48" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEaklEQVR4Ae2dvY9MURiHfw2xyaIRohOVSuFjo/Bdiq2E/0CnVUpoNFQSWokCtUYIHaEmGg2dUPjWiK8c2W1kz7Eze897f3vOM8lmk3Nm7vu+v+eZO7uzk72Sz22npCuSHkv6LOmFpBuSTvm0SCc1Elgj6byk75J+Z77uSNpaozjHHDeBGUkPM9D/leGNpB3jtkv1IRNI8B8sE/6iDEgwJIERj7VO0v0J4SPBiMCGLJ3g35sSPhIMSWKkY91aIXwkGAncEGVPDAQfCYagEXyMdOp/O7AASQR+MAwGOW25fRXgcyaYlsYIjztTUQDOBCMAnbTkucoCIMGkRILvfzxAACQIhjpJuS2SfiHBJJG1d9+rQQJwJjB1Z1bSayQwpRPU1pykj0gQlLZpGSQwBRPZFhJEpm1aCwlMwUS2hQSRaZvWQgJTMJFtIUFk2qa1kMAUTGRbSBCZtmktJDAFE9kWEkSmbVprL28bm5IJbAsJAsN2LYUErmQC+0KCwLBdSyUJPvCnZFc8MX0hQUzO1lWQwBpPTHNIEJOzdRUksMYT09wefjCMCdq5ChI40wnqDQmCgnYugwTOdIJ6Q4KgoJ3LIIEznaDekCAoaOcySOBMJ6g3JAgK2rnMbt4scsYT0xsSxORsXSVJ8J7PE1gzqt4cElSP2L8AEvgzqt4hElSP2L8AEvgzqt4hElSP2L8AEvgzqt4hElSP2L/ALt4n8IdUu0MkqJ3wKjg+EqwCSLVbRILaCa+C40dL8FJSup4iN6MEoiW4bDQ7rSwkECnBT66T7OldpATznhHQVZQE6Wrq3AwT2C/pS8AHStIFtriZJRAFP13u5pjZ7N23Ewn/u6TN3SduFEAk/PTsv2A0e/etHAh6zU/g09dzSWu7T90kgGj46Wpq20xm774N4HesAPCB//f1ePF1ueZ3TvtGsvHMN4IR3UqC/zXgHb7FswnP/GjChXrAL4TT+hbwWydcmO8gp/1COo1vAb9xwKXxgF9Kp/E94DcOuDQe8EvpNL4H/MYBl8YDfimdxveA3zjg0niH+D2/FE/be8Bvm29xOuAX42l7E/ht8y1OB/xiPG1vAr9tvsXpgF+Mp+1N4LfNtzgd8IvxtL15WNI3PsPXNuTcdMDPJdPBOvA7gJwbEfi5ZDpYB34HkHMjAj+XTAfrwO8Acm5E4OeS6WD9CL/nd0A5MyLwM8H0sAz8HihnZgR+JpgeloHfA+XMjMDPBNPDMvB7oJyZEfiZYHpYBn4PlDMzAj8TTA/LmyS945M8PaBeesabwF86mB5WtwO/B8z5GU8GCcA/YcwzGHXnYoAAwB8Vcbn42coCAL+c/+i7RysKAPzR8f6/gY2SPlWQAPj/z97mHqcHFgD4NmiX38jdgSQA/vIzt7rnrKRHK5QA+FZIJ29mvaTHU0oA/MnztnxEkuDJhBIA3xLl9E1tkPR0mRK84rp60wft/MgZSZck/SiIcFtS+ksit4YTmJN0beGM8FnSM0nXJc03PPPoo/0BuFLqnBjjLFQAAAAASUVORK5CYII="/>
-                  </defs>
-                  </svg>
-              </button>
-
-              <button onclick="next()">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="22" viewBox="0 0 15 22" fill="none">
-                  <rect width="14.9031" height="21.9998" fill="url(#pattern0_17_48)"/>
-                  <defs>
-                  <pattern id="pattern0_17_48" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0_17_48" transform="matrix(0.0115327 0 0 0.0078125 -0.238095 0)"/>
-                  </pattern>
-                  <image id="image0_17_48" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEaklEQVR4Ae2dvY9MURiHfw2xyaIRohOVSuFjo/Bdiq2E/0CnVUpoNFQSWokCtUYIHaEmGg2dUPjWiK8c2W1kz7Eze897f3vOM8lmk3Nm7vu+v+eZO7uzk72Sz22npCuSHkv6LOmFpBuSTvm0SCc1Elgj6byk75J+Z77uSNpaozjHHDeBGUkPM9D/leGNpB3jtkv1IRNI8B8sE/6iDEgwJIERj7VO0v0J4SPBiMCGLJ3g35sSPhIMSWKkY91aIXwkGAncEGVPDAQfCYagEXyMdOp/O7AASQR+MAwGOW25fRXgcyaYlsYIjztTUQDOBCMAnbTkucoCIMGkRILvfzxAACQIhjpJuS2SfiHBJJG1d9+rQQJwJjB1Z1bSayQwpRPU1pykj0gQlLZpGSQwBRPZFhJEpm1aCwlMwUS2hQSRaZvWQgJTMJFtIUFk2qa1kMAUTGRbSBCZtmktJDAFE9kWEkSmbVprL28bm5IJbAsJAsN2LYUErmQC+0KCwLBdSyUJPvCnZFc8MX0hQUzO1lWQwBpPTHNIEJOzdRUksMYT09wefjCMCdq5ChI40wnqDQmCgnYugwTOdIJ6Q4KgoJ3LIIEznaDekCAoaOcySOBMJ6g3JAgK2rnMbt4scsYT0xsSxORsXSVJ8J7PE1gzqt4cElSP2L8AEvgzqt4hElSP2L8AEvgzqt4hElSP2L8AEvgzqt4hElSP2L/ALt4n8IdUu0MkqJ3wKjg+EqwCSLVbRILaCa+C40dL8FJSup4iN6MEoiW4bDQ7rSwkECnBT66T7OldpATznhHQVZQE6Wrq3AwT2C/pS8AHStIFtriZJRAFP13u5pjZ7N23Ewn/u6TN3SduFEAk/PTsv2A0e/etHAh6zU/g09dzSWu7T90kgGj46Wpq20xm774N4HesAPCB//f1ePF1ueZ3TvtGsvHMN4IR3UqC/zXgHb7FswnP/GjChXrAL4TT+hbwWydcmO8gp/1COo1vAb9xwKXxgF9Kp/E94DcOuDQe8EvpNL4H/MYBl8YDfimdxveA3zjg0niH+D2/FE/be8Bvm29xOuAX42l7E/ht8y1OB/xiPG1vAr9tvsXpgF+Mp+1N4LfNtzgd8IvxtL15WNI3PsPXNuTcdMDPJdPBOvA7gJwbEfi5ZDpYB34HkHMjAj+XTAfrwO8Acm5E4OeS6WD9CL/nd0A5MyLwM8H0sAz8HihnZgR+JpgeloHfA+XMjMDPBNPDMvB7oJyZEfiZYHpYBn4PlDMzAj8TTA/LmyS945M8PaBeesabwF86mB5WtwO/B8z5GU8GCcA/YcwzGHXnYoAAwB8Vcbn42coCAL+c/+i7RysKAPzR8f6/gY2SPlWQAPj/z97mHqcHFgD4NmiX38jdgSQA/vIzt7rnrKRHK5QA+FZIJ29mvaTHU0oA/MnztnxEkuDJhBIA3xLl9E1tkPR0mRK84rp60wft/MgZSZck/SiIcFtS+ksit4YTmJN0beGM8FnSM0nXJc03PPPoo/0BuFLqnBjjLFQAAAAASUVORK5CYII="/>
-                  </defs>
-                  </svg>
-              </button>
+              <div class="blocks_news_texts">
+                <p>Минобрнауки Хакасии объявляет о проведении конкурса на соискание грантов правительства Хакасии в области государственной молодёжной политики в 2023 году. </p>
+                <p>Гранты предоставляются на приоритетные направления и на цели, соответствующие задачам проекта, с которым обращается соискатель гранта.</p>
+                  
+                  <p>Соискателями грантов могут быть: некоммерческие организации, реализующие проекты в области государственной молодёжной политики, действующие на территории Хакасии, зарегистрированные в установленном порядке, а также профессиональные образовательные организации и образовательные организации высшего образования.</p>
+                  <p>
+                    Заявки принимаются с 20 апреля по 20 мая с 9.00 до 13.00 и 14.00 до 18.00 в рабочие дни по адресу: г. Абакан, ул. Крылова, 72, каб. 111 (отдел по делам молодёжи, воспитания и дополнительного образования), контактный телефон: 8 (3902) 295-302.
+                  </p>
+              </div>
             </div>
           </div>
         </section>
-
-        <div class="main_blocks">
-          <section>
-            <div class="__container">
-              <h2 class="title_section">Самое актуальное</h2>
-              <div class="actual_blocks">
-                <div class="actual_block">
-                  <div class="actual_block__img">
-                    <img src="img/Rectangle 9.png" class="img" alt="">
-                  </div>
-                  <p class="p_16">11.11.2023</p>
-                  <h4>Итоги полуфинала</h4>
-                  <p>Здесь будет небольшое описание новости, например Итоги полуфинала уже подведены </p>
-                  
-                  <div class="actual_block__link">
-                    <a href="new_block.html">Подробнее</a>
-                  </div>
-                </div>
-                <div class="actual_block">
-                  <div class="actual_block__img">
-                    <img src="img/Rectangle 9.png" class="img" alt="">
-                  </div>
-                  <p class="p_16">11.11.2023</p>
-                  <h4>Результаты первого этапа</h4>
-                  <p>А тут результаты первого этапа, все участники молодцы, работы достойные!</p>
-                  
-                  <div class="actual_block__link">
-                    <a href="new_block.html">Подробнее</a>
-                  </div>
-                </div>
-                <div class="actual_block">
-                  <div class="actual_block__img">
-                    <img src="img/Rectangle 9.png" class="img" alt="">
-                  </div>
-                  <p class="p_16">11.11.2023</p>
-                  <h4>Итоги полуфинала</h4>
-                  <p>Здесь будет небольшое описание новости, например Итоги полуфинала уже подведены </p>
-                  
-                  <div class="actual_block__link">
-                    <a href="new_block.html">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="actual_block_btn">
-                <button class="btn btn_green">Подать заявку</button>
-              </div>
-            </div>
-          </section>
-  
-          <section>
-            <div class="__container">
-              <h2 class="title_section">Направления конкурса</h2>
-  
-              <div class="concurs_blocks">
-                <div class="concurs_block concurs_block__one">
-                  <div class="concurs_block__one__title">
-                    <p><b>№ 1</b> <br>Разработка макета наклеек для проведения уличных пропагандистских акций.</p>
-                  </div>
-                  <div class="concurs_block__img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="218" height="191" viewBox="0 0 218 191" fill="none">
-                      <path d="M87.7807 226.014C82.8631 228.867 77.6422 229.549 72.1184 228.062C66.5947 226.575 62.4132 223.362 59.5741 218.421L2.79079 119.621C-0.0483728 114.681 -0.727915 109.437 0.752166 103.887C2.23224 98.3384 5.43107 94.1384 10.3486 91.2858L46.1128 70.5432L35.7886 52.5795C32.9494 47.6395 32.2699 42.395 33.7499 36.846C35.23 31.297 38.4289 27.0965 43.3464 24.2444L79.1106 3.50163C84.0285 0.649503 89.2492 -0.0331407 94.7723 1.4537C100.296 2.94054 104.478 6.15398 107.317 11.094L117.641 29.0578L153.406 8.31503C158.323 5.4629 163.543 4.78026 169.067 6.2671C174.591 7.75394 178.773 10.9674 181.611 15.9074L238.395 114.708C241.234 119.648 241.914 124.892 240.434 130.441C238.954 135.991 235.755 140.191 230.837 143.043L87.7807 226.014ZM63.9949 60.1719L99.7593 39.4292L89.435 21.4654L53.6707 42.2081L63.9949 60.1719ZM199.865 89.1518L155.159 115.08L165.483 133.044L111.837 164.158L101.513 146.194L56.8077 172.123L77.4562 208.05L220.513 125.079L199.865 89.1518ZM119.395 135.823L137.277 125.452L126.952 107.488L109.071 117.859L119.395 135.823ZM46.4835 154.159L91.1885 128.23L80.8644 110.267L134.511 79.1529L144.835 97.117L189.54 71.1882L163.73 26.2788L20.6728 109.25L46.4835 154.159Z" fill="url(#paint0_linear_22_156)"/>
-                      <defs>
-                      <linearGradient id="paint0_linear_22_156" x1="-2.21061" y1="12.7305" x2="211.41" y2="232.978" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.0674487" stop-color="#FFCEA1"/>
-                      <stop offset="1" stop-color="white" stop-opacity="0"/>
-                      </linearGradient>
-                      </defs>
-                      </svg>
-                  </div>
-                </div>
-                <div class="concurs_block concurs_block__two">
-                  <div class="concurs_block__one__title">
-                    <p><b>№ 2</b> <br>Разработка макета логотипа Госавтоинспекции МВД по Республике Хакасия.</p>
-                  </div>
-                  <div class="concurs_block__img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="190" height="248" viewBox="0 0 190 248" fill="none">
-                      <g clip-path="url(#clip0_22_153)">
-                      <path d="M24.2734 224.755L47.5344 214.875C45.5715 208.905 43.7557 202.833 42.0873 196.657C40.4187 190.482 39.0937 184.307 38.1122 178.131L24.2734 188.012V224.755ZM71.3843 211.787H118.495C122.028 203.553 124.875 193.518 127.034 181.682C129.193 169.847 130.273 157.753 130.273 145.402C130.273 125.024 127.034 105.726 120.557 87.5089C114.079 69.2918 105.54 55.2429 94.9397 45.3624C84.3398 55.2429 75.8009 69.2918 69.3232 87.5089C62.8454 105.726 59.6066 125.024 59.6066 145.402C59.6066 157.753 60.6863 169.847 62.8454 181.682C65.0047 193.518 67.851 203.553 71.3843 211.787ZM94.9397 150.034C88.462 150.034 82.9167 147.615 78.3037 142.778C73.6908 137.941 71.3843 132.126 71.3843 125.333C71.3843 118.54 73.6908 112.725 78.3037 107.887C82.9167 103.05 88.462 100.631 94.9397 100.631C101.417 100.631 106.962 103.05 111.576 107.887C116.189 112.725 118.495 118.54 118.495 125.333C118.495 132.126 116.189 137.941 111.576 142.778C106.962 147.615 101.417 150.034 94.9397 150.034ZM165.606 224.755V188.012L151.768 178.131C150.786 184.307 149.461 190.482 147.792 196.657C146.124 202.833 144.308 208.905 142.346 214.875L165.606 224.755ZM94.9397 13.8684C114.373 28.6891 129.046 47.5238 138.959 70.3724C148.872 93.221 153.828 119.775 153.828 150.034L178.562 167.325C181.899 169.589 184.499 172.574 186.364 176.279C188.23 179.984 189.161 183.895 189.161 188.012V261.19L130.568 236.488H59.3121L0.717972 261.19V188.012C0.717972 183.895 1.65038 179.984 3.51518 176.279C5.37999 172.574 7.98091 169.589 11.3179 167.325L36.0511 150.034C36.0511 119.775 41.0076 93.221 50.9206 70.3724C60.8334 47.5238 75.5065 28.6891 94.9397 13.8684Z" fill="url(#paint0_linear_22_153)"/>
-                      </g>
-                      <defs>
-                      <linearGradient id="paint0_linear_22_153" x1="5.76903" y1="-148.975" x2="228.394" y2="207.263" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.609375" stop-color="white"/>
-                      <stop offset="0.899557" stop-color="white" stop-opacity="0"/>
-                      </linearGradient>
-                      <clipPath id="clip0_22_153">
-                      <rect width="188.444" height="248" fill="white" transform="translate(0.717972)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </div>
-                </div>
-                <div class="concurs_block concurs_block__three">
-                  <div class="concurs_block__one__title">
-                    <div class="concurs_block__one__title">
-                      <p><b>№ 3</b> <br>Разработка макета логотипа проекта студенческих инициатив «За безопасность дорожного движения и сохранения жизни в Республике Хакасия».</p>
-                    </div>
-                  </div>
-                  <div class="concurs_block__img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="109" height="198" viewBox="0 0 109 198" fill="none">
-                      <g clip-path="url(#clip0_22_169)">
-                      <path d="M108.494 144C108.494 159 103.22 171.75 92.6715 182.25C82.1239 192.75 69.3154 198 54.2468 198C39.1783 198 26.37 192.75 15.822 182.25C5.274 171.75 6.5867e-07 159 0 144C-4.34719e-07 134.1 2.48632 125.025 7.45894 116.775C12.4316 108.525 18.9864 102 27.1234 97.1998V2.36042e-06L81.3705 0V18H108.494V72H81.3705V97.1998C89.5073 102 96.0624 108.525 101.035 116.775C106.008 125.025 108.494 134.1 108.494 144ZM90.4111 144C90.4111 134.1 87.3599 126.15 81.2575 120.15C75.1545 114.15 69.1647 110.55 63.2879 109.35V54H90.4111V36H63.2879V18H45.2057V109.35C39.3289 110.55 33.3392 114.15 27.2364 120.15C21.1337 126.15 18.0823 134.1 18.0823 144C18.0823 153.9 21.6234 162.375 28.7056 169.425C35.7879 176.475 44.3016 180 54.2468 180C64.1921 180 72.7059 176.475 79.788 169.425C86.8706 162.375 90.4111 153.9 90.4111 144ZM72.3291 144C72.3291 139.05 70.5586 134.813 67.0175 131.287C63.4763 127.762 59.2195 126 54.2468 126C49.2742 126 45.0173 127.762 41.4762 131.287C37.9351 134.813 36.1645 139.05 36.1645 144C36.1645 148.95 37.9351 153.188 41.4762 156.712C45.0173 160.237 49.2742 162 54.2468 162C59.2195 162 63.4763 160.237 67.0175 156.712C70.5586 153.188 72.3291 148.95 72.3291 144Z" fill="url(#paint0_linear_22_169)"/>
-                      </g>
-                      <defs>
-                      <linearGradient id="paint0_linear_22_169" x1="35.0073" y1="-7.76518e-06" x2="-37.6635" y2="176.373" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.625" stop-color="white"/>
-                      <stop offset="0.899557" stop-color="white" stop-opacity="0"/>
-                      </linearGradient>
-                      <clipPath id="clip0_22_169">
-                      <rect width="109" height="198" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </div>
-                </div>
-                <div class="concurs_block concurs_block__four">
-                  <div class="concurs_block__one__title">
-                    <p><b>№ 4</b> <br>Разработка макета баннера социальной рекламы.</p>
-                  </div>
-                  <div class="concurs_block__img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="216" height="211" viewBox="0 0 216 211" fill="none">
-                      <g clip-path="url(#clip0_22_162)">
-                      <path d="M153.892 195.516C137.53 191.632 120.983 190.989 104.249 193.59C87.5159 196.191 71.6492 201.819 56.6491 210.475L0.611328 113.465C15.4645 104.894 31.2789 99.3451 48.0546 96.818C64.8303 94.2909 81.5151 95.0005 98.1088 98.9476C102.986 82.6109 110.713 67.8138 121.291 54.5567C131.868 41.2997 144.584 30.3857 159.437 21.8146L215.475 118.825C200.327 127.565 187.481 138.506 176.934 151.647C166.388 164.789 158.707 179.412 153.892 195.516ZM140.647 172.587C145.921 160.332 152.591 149.135 160.654 138.994C168.718 128.853 177.883 119.939 188.148 112.252L152.997 51.4C143.365 59.5057 135.043 69.4529 128.029 81.2415C121.015 93.0298 115.456 106.575 111.354 121.877C96.045 117.777 81.529 115.815 67.8074 115.992C54.0858 116.169 41.3054 118.399 29.4662 122.684L64.6171 183.536C76.4109 178.494 88.7173 175.018 101.535 173.109C114.354 171.199 127.391 171.025 140.647 172.587ZM85.1187 76.4589C75.4125 82.0602 65.1084 83.4004 54.2059 80.4806C43.3034 77.5608 35.0504 71.2504 29.4466 61.5495C23.8428 51.8484 22.5016 41.5496 25.4229 30.6528C28.3442 19.756 34.6578 11.5072 44.3639 5.90633C54.0699 0.305459 64.3741 -1.03508 75.2765 1.8847C86.1791 4.80448 94.4319 11.1149 100.036 20.8159C105.639 30.5168 106.981 40.8158 104.06 51.7125C101.139 62.6093 94.8248 70.8581 85.1187 76.4589ZM74.9299 58.8208C79.7829 56.0204 82.9399 51.8959 84.4006 46.4476C85.8612 40.9992 85.1904 35.8498 82.3881 30.9993C79.5866 26.1487 75.4601 22.9936 70.0089 21.5337C64.5577 20.0738 59.4056 20.744 54.5526 23.5445C49.6995 26.3449 46.5427 30.4693 45.0821 35.9177C43.6214 41.3661 44.292 46.5155 47.0939 51.3661C49.8958 56.2165 54.0223 59.3718 59.4735 60.8317C64.9248 62.2916 70.0769 61.6212 74.9299 58.8208Z" fill="url(#paint0_linear_22_162)"/>
-                      </g>
-                      <defs>
-                      <linearGradient id="paint0_linear_22_162" x1="-102.908" y1="-75.5698" x2="226.051" y2="117.305" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.447028" stop-color="#FFCEA1"/>
-                      <stop offset="0.899557" stop-color="white"/>
-                      </linearGradient>
-                      <clipPath id="clip0_22_162">
-                      <rect width="216" height="211" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="actual_block_btn position_right_btn">
-                <button class="btn btn_green">Подать заявку</button>
-              </div>
-            </div>
-          </section>
-  
-          <section>
-            <div class="__container">
-              <h2 class="title_section">Вопросы - ответы</h2>
-  
-              <div class="accordion_section">
-                <div class="accordion">
-                    <div class="accordion_item active">
-                        <button class="btn_blue accordion_btn accordion_btn__active" data-title="Раздел 1">
-                            <div class="accordion_item__title">
-                                <h4>Я подал заявку и не получил обратной связи. Когда я получу ответ?</h4>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="100" height="100" viewBox="0 0 160 160">
-                                <rect class="vertical-line" x="70" width="20" height="160" rx="20"/>
-                                <rect class="horizontal-line" y="70" width="160" height="20" rx="20"/>
-                            </svg>                                
-                        </button>
-                        <div class="accordion_content accordion_content__active">
-                          <div class="accordion_content__text">
-                            <p>По завершении отбора проектов в случае выбора экспертами вашего проекта с вами свяжется представитель программы. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia repellendus fuga deserunt, eveniet quod fugiat optio reiciendis qui aliquid ea quam iste commodi alias! Quos illum soluta consectetur nesciunt aut.</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="accordion_item">
-                        <button class="btn_blue accordion_btn" data-title="Раздел 2">
-                            <div class="accordion_item__title">
-                                <h4 class="light">Что делать, если при заполнении заявки возникла ошибка?</h4>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="100" height="100" viewBox="0 0 160 160">
-                                <rect class="vertical-line" x="70" width="20" height="160" rx="20"/>
-                                <rect class="horizontal-line" y="70" width="160" height="20" rx="20"/>
-                            </svg>                                
-                        </button>
-                        <div class="accordion_content">
-                          <div class="accordion_content__text">
-                            <p>По завершении отбора проектов в случае выбора экспертами вашего проекта с вами свяжется представитель программы. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia repellendus fuga deserunt, eveniet quod fugiat optio reiciendis qui aliquid ea quam iste commodi alias! Quos illum soluta consectetur nesciunt aut.</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="accordion_item">
-                        <button class="btn_blue accordion_btn" data-title="Раздел 2">
-                            <div class="accordion_item__title">
-                                <h4 class="light">Кто будет оценивать мою заявку?</h4>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="100" height="100" viewBox="0 0 160 160">
-                                <rect class="vertical-line" x="70" width="20" height="160" rx="20"/>
-                                <rect class="horizontal-line" y="70" width="160" height="20" rx="20"/>
-                            </svg>                                
-                        </button>
-                        <div class="accordion_content">
-                          <div class="accordion_content__text">
-                            <p>По завершении отбора проектов в случае выбора экспертами вашего проекта с вами свяжется представитель программы. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia repellendus fuga deserunt, eveniet quod fugiat optio reiciendis qui aliquid ea quam iste commodi alias! Quos illum soluta consectetur nesciunt aut.</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="accordion_item">
-                        <button class="btn_blue accordion_btn" data-title="Раздел 2">
-                            <div class="accordion_item__title">
-                                <h4 class="light">Как подать заявку?  </h4>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="plus" width="100" height="100" viewBox="0 0 160 160">
-                                <rect class="vertical-line" x="70" width="20" height="160" rx="20"/>
-                                <rect class="horizontal-line" y="70" width="160" height="20" rx="20"/>
-                            </svg>                                
-                        </button>
-                        <div class="accordion_content">
-                          <div class="accordion_content__text">
-                            <p>По завершении отбора проектов в случае выбора экспертами вашего проекта с вами свяжется представитель программы. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia repellendus fuga deserunt, eveniet quod fugiat optio reiciendis qui aliquid ea quam iste commodi alias! Quos illum soluta consectetur nesciunt aut.</p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-          </section>
-        </div>
-
-        <div class="popup" id="popup">
-          <div class="popup-content">
-              <span class="close-btn" id="closeBtn">&times;</span>
-              <div class="popup-img-container">
-                  <img src="img/pngwing.com.png" class="popup-img" alt="Dron">
-              </div>
-              <div class="popup-text">
-                  <p>Не упустите возможность внести свой вклад в <span class="blue_text">повышение безопасности на дорогах</span> и получить ценные призы! Ваши идеи и предложения могут <span class="blue_text">сделать дороги безопаснее для всех.</span></p>
-              </div>
-              <div class="flipping-text">
-                <h4>Присоединяйтесь к нашему проекту и получите бонусы!</h4>
-              </div>
-          </div>
-      </div>
       </main>
 
       <footer class="footer">
@@ -391,14 +137,14 @@
               </div>
               <nav class="footer_block_medium">
                   <div class="footer_block_medium__column">
-                    <a href="index.html">Главная</a>
-                    <a href="concurs.html">Конкурс</a>
-                    <a href="results.html">Результаты</a>
+                    <a href="">Главная</a>
+                    <a href="">Конкурс</a>
+                    <a href="">Результаты</a>
                   </div>
                   <div class="footer_block_medium__column">
-                    <a href="workYears.html">Работы по годам</a>
-                    <a href="news.html">Новости</a>
-                    <a href="profile.html">Личный кабинет</a>
+                    <a href="">Работы по годам</a>
+                    <a href="">Новости</a>
+                    <a href="">Личный кабинет</a>
                   </div>
               </nav>
               <div class="footer_block_line">
@@ -418,6 +164,5 @@
     <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/accordion.js"></script>
-    <script src="js/pop_up.js"></script>
   </body>
 </html>

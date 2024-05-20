@@ -1,0 +1,16 @@
+.blocks_news {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.blocks_news__img {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blocks_news_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
